@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Hair Day - Treat yourself</title>
+    <meta
+      name="description"
+      content="Website for the Hair Day hair salon specializing in hair colors and edgy haircuts"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico"/>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="img/logo1.png" alt="Hair day" width="444px" />
+    </header>
+    <nav class="bg-pink">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#inspo">Inspo</a></li>
+        <li><a href="#book">Book</a></li>
+        <li><a href="staff.html">Staff</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="banner">
+        <article>
+          <div class="background bg-pink"></div>
+          <h1>Treat yourself to a new you.</h1>
+          <div id="banner-content">
+            <p>Bring out your inner creative by treating yourself to a new look from head to toes.</p>
+            <a href="#book" class="btn-secondary">Book now</a>
+          </div>
+          <img
+            id="banner-img"
+            src="img/banner.jpg"
+            alt="A girl with teal hair clipped back lies in brick floor and rests on some plants."
+          />
+        </article>
+      </section>
+      <section id="inspo">
+        <div>
+          <h1>Find your inspiration</h1>
+          <p>The world is more fun with a splash of color, and so are you! Find your next bold look with us.</p>
+        </div>
+        <div id="inspo-cards">
+          <article class="card">
+            <h2>Bold colors</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pretium quam...</p>
+          </article>
+          <article class="card">
+            <h2>Nails for him</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pretium quam...</p>
+          </article>
+          <article class="card">
+            <h2>Shine bright</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pretium quam...</p>
+          </article>
+         <a href="inspo.html"><article class="btn-more">+</article></a>
+        </div>
+      </section>
+      <section id="book" class="bg-pink">
+        <div>
+          <h1>
+            Ready for a new you?
+          </h1>
+          <p>Book an appointment with our team of experts and get that new look you've been dreaming of! </p>
+          <p>Pick a day and time that suits you and we'll get back to you with available dates. </p>
+          <form method="POST">
+            <input name="name" type="text" placeholder="Name" required/>
+            <input name="email" type="email" placeholder="Email" required/>
+            <input name="phone" type="tel" placeholder="Phone Number" required/>
+            <select name="day">
+              <option value="1">Monday</option>
+              <option value="2">Tuesday</option>
+              <option value="4">Wednesday</option>
+              <option value="3">Thursday</option>
+              <option value="5">Friday</option>
+            </select>
+            <select name="time">
+              <option value="13">1:00 PM</option>
+              <option value="14">2:00 PM</option>
+              <option value="15">3:00 PM</option>
+              <option value="16">4:00 PM</option>
+              <option value="17">5:00 PM</option>
+            </select>
+            <input type="submit" value="Book now" />
+          </form>
+        </div>
+        <img src="img/book-img.png" alt="Girl with short teal hair wearing jeans and a black tshirt celebrating." />
+      </section>
+    </main>
+    <footer>
+      <img src="img/logo2.png" alt="Hair Day logo" />
+      <p>© 2023 Hair Day, Inc. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

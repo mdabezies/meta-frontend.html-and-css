@@ -1,0 +1,376 @@
+/*******************/
+/* General styles */
+/*******************/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: Inter;
+  color: rgba(13, 13, 13, 1);
+  font-size: 1.3em;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+.bg-pink {
+  background-color: rgba(242, 224, 213, 1);
+}
+
+/*****************/
+/* Header styles */
+/*****************/
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: rgba(13, 13, 13, 1);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin: 1em 0;
+}
+
+header img {
+  height: 1.5em;
+  object-fit: scale-down;
+}
+
+/******************/
+/* Nav bar styles */
+/******************/
+
+nav {
+  padding-top: 1em;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: uppercase;
+  list-style-type: none;
+  padding: 0 10vw;
+}
+
+nav ul a {
+  transition: text-shadow 0.5s;
+}
+
+nav ul a:hover {
+  text-shadow: 3px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*************************/
+/* Banner section styles */
+/*************************/
+
+#banner article {
+  display: grid;
+  grid-template-columns: 10vw 30vw 50vw 10vw;
+  grid-template-rows: 30vh 35vh 25vh;
+  margin: auto;
+}
+
+#banner article h1 {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  width: 35vw;
+  padding-top: 2rem;
+  white-space: break-spaces;
+}
+
+#banner-content {
+  grid-column-start: 3;
+  grid-row-start: 1;
+  justify-self: flex-end;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-top: 2em;
+}
+
+#banner .background {
+  display: flex;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+.btn-secondary {
+  border: 3px solid rgba(13, 13, 13, 1);
+  border-radius: 20px;
+  text-transform: uppercase;
+  max-width: 20vw;
+  padding: 0.5rem;
+  text-align: center;
+  transition: box-shadow 0.5s, transform 0.5s;
+}
+
+.btn-secondary:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15), inner 0 0 5px rgba(0, 0, 0, 0.15);
+  transform: scale(1.01);
+}
+
+#banner-img {
+  height: 60vh;
+  width: 80vw;
+  object-fit: cover;
+  grid-column-start: 2;
+  grid-row-start: 2;
+  border-radius: 25px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.25);
+}
+
+/************************/
+/* Inspo section styles */
+/***********************/
+
+#inspo {
+  padding: 5vh 10vw;
+}
+
+h1 {
+  padding-bottom: 0.5em;
+}
+
+#inspo-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+.card,
+.btn-more {
+  border-radius: 15px;
+  height: 45vh;
+  transition: transform 0.5s, box-shadow 0.5s;
+  cursor: pointer;
+}
+
+.card:hover,
+.btn-more:hover {
+  transform: scale(1.05);
+}
+
+.card {
+  width: 19vw;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
+}
+
+.card:nth-of-type(1) {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(13, 13, 13, 0.73)), url("img/bold-colors.jpg");
+  background-size: cover;
+}
+.card:nth-of-type(2) {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(13, 13, 13, 0.73)),
+    url("img/nails-for-him.jpg");
+  background-size: cover;
+}
+.card:nth-of-type(3) {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(13, 13, 13, 0.73)),
+    url("img/shine-bright.jpg");
+  background-size: cover;
+}
+
+.btn-more {
+  font-size: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.33em;
+  background: rgba(217, 217, 217, 0.5);
+}
+
+/***********************/
+/* Book section styles */
+/***********************/
+
+#book {
+  display: flex;
+  justify-content: space-between;
+  height: 79vh;
+  margin-top: 10vh;
+  padding: 0 10vw;
+}
+
+#book div:first-child {
+  margin: auto;
+}
+
+#book p {
+  width: 45vw;
+}
+
+#book form {
+  margin-top: 1.5em;
+  display: grid;
+  height: fit-content;
+  width: 35vw;
+  grid-template: repeat(4, auto) / 1fr 1fr;
+  gap: 1em;
+}
+
+#book form input,
+#book form select {
+  height: 2em;
+  border-radius: 5px;
+  border: 2px solid rgba(211, 100, 76, 1);
+  padding-left: 0.5em;
+}
+
+#book form input {
+  grid-column: 1 / span 2;
+}
+
+#book form input::placeholder {
+  color: rgba(13, 13, 13, 0.75);
+}
+
+#book form input:nth-last-child(-n + 3) {
+  grid-column: span 1;
+}
+
+#book form input:nth-last-of-type(1) {
+  grid-column: 1 / span 2;
+  background: rgba(211, 100, 76, 1);
+  box-shadow: 5px 5px 0px rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: box-shadow 0.3s, transform 0.3;
+}
+
+#book form input:nth-last-of-type(1):hover {
+  box-shadow: 3px 3px 0px rgb(255, 255, 255);
+  transform: translate(2px, 2px);
+}
+
+#book img {
+  height: 85vh;
+  position: relative;
+  top: -6vh;
+}
+
+/*****************/
+/* Footer styles */
+/*****************/
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5vw;
+  padding: 1.5em 10vw;
+}
+
+footer p {
+  font-size: 0.8em;
+}
+
+footer img {
+  width: 10vh;
+}
+
+@media only screen and (max-width: 1300px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  #banner article {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+  }
+
+  #banner article h1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 5vw 10vw;
+  }
+
+  #banner-content {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 0 10vw;
+  }
+
+  #banner .background {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+
+  #banner-img {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end: -1;
+    margin: auto;
+  }
+
+  .btn-secondary {
+    max-width: 100%;
+    margin-bottom: 5vw;
+  }
+
+  #inspo {
+    padding: 5vw 10vw;
+  }
+
+  #inspo-cards {
+    flex-direction: column;
+    gap: 5vw;
+  }
+
+  .card {
+    box-sizing: border-box;
+    width: 80vw;
+  }
+
+  .btn-more {
+    height: 10vh;
+  }
+
+  #book {
+    margin-top: 0;
+    height: 85vh;
+  }
+
+  #book p {
+    width: 80vw;
+    font-size: 0.8em;
+  }
+
+  #book form {
+    width: 80vw;
+    box-sizing: border-box;
+  }
+
+  #book img {
+    display: none;
+  }
+}
